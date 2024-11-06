@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <h2>Turma projeto franca digital</h2>
+
+        a = 1 + 1
+
+        <script>
+            var soma = 40 + 4 //inteiro
+            var nome = "Pedro" + "Henrique" + "Carrijo"
+            var peso = 75 //flaot ou decimal
+            var masculino = true
+            var feminino = false
+
+            var nomes = ["Pedro", "joão", "Maria", "José"]
+
+            var cadastro = {
+                nome: "Pedro",
+                idade: 17,
+                peso: 75,
+                masculino: true 
+            }
+            console.log(soma)
+            console.log(nome)
+            console.log(peso)
+            console.log(masculino)
+            console.log(feminino)
+
+            console.log(nomes)
+            console.log(nomes[1])
+            console.log(cadastro.idade)
+
+            alert("Meu nome é " + nome)
+            alert(peso)
+            alert(masculino)
+
+            console.log("A soma dos numeros é: " , soma, " e o nome do aluno é: ", nome)
+        </script>
+    </body>
+</html>
