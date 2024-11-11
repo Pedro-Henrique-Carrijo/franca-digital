@@ -1,0 +1,58 @@
+def adivinhar_animal():
+    print("Responda as perguntas com 'sim' ou 'não'.")
+
+    # Primeira divisão: mamífero ou não
+    mamifero = input("É um mamífero? ").strip().lower()
+    
+    if mamifero == "sim":
+        quadrupede = input("É quadrúpede? ").strip().lower()
+        if quadrupede == "sim":
+            carnivoro = input("É carnívoro? ").strip().lower()
+            if carnivoro == "sim":
+                print("O animal escolhido foi o leão.")
+            else:
+                herbivoro = input("É herbívoro? ").strip().lower()
+                if herbivoro == "sim":
+                    print("O animal escolhido foi o cavalo.")
+                else:
+                    print("Animal desconhecido.")
+        else:
+            voador = input("É voador? ").strip().lower()
+            if voador == "sim":
+                print("O animal escolhido foi o morcego.")
+            else:
+                print("O animal escolhido foi o homem.")
+    
+    else:  # Não é mamífero
+        pena = input("Tem penas? ").strip().lower()
+        if pena == "sim":
+            voador = input("É voador? ").strip().lower()
+            if voador == "sim":
+                nadador = input("Nada? ").strip().lower()
+                if nadador == "sim":
+                    print("O animal escolhido foi o pato.")
+                else:
+                    rapina = input("É ave de rapina? ").strip().lower()
+                    if rapina == "sim":
+                        print("O animal escolhido foi a águia.")
+                    else:
+                        print("O animal escolhido foi o avestruz.")
+            else:
+                print("O animal escolhido foi o pinguim.")
+        else:
+            aquatico = input("Vive na água? ").strip().lower()
+            if aquatico == "sim":
+                grande = input("É de grande porte? ").strip().lower()
+                if grande == "sim":
+                    print("O animal escolhido foi a baleia.")
+                else:
+                    print("O animal escolhido foi a tartaruga.")
+            else:
+                rasteja = input("Rasteja? ").strip().lower()
+                if rasteja == "sim":
+                    print("O animal escolhido foi a cobra.")
+                else:
+                    print("O animal escolhido foi o crocodilo.")
+
+# Chama a função para começar o jogo
+adivinhar_animal()
