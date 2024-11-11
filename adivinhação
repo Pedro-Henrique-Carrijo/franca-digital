@@ -1,7 +1,7 @@
 def adivinhar_animal():
     print("Responda as perguntas com 'sim' ou 'não'.")
 
-    # Primeira divisão: mamífero ou não
+ 
     mamifero = input("É um mamífero? ").strip().lower()
     
     if mamifero == "sim":
@@ -23,7 +23,7 @@ def adivinhar_animal():
             else:
                 print("O animal escolhido foi o homem.")
     
-    else:  # Não é mamífero
+    else:  
         pena = input("Tem penas? ").strip().lower()
         if pena == "sim":
             voador = input("É voador? ").strip().lower()
@@ -54,5 +54,5 @@ def adivinhar_animal():
                 else:
                     print("O animal escolhido foi o crocodilo.")
 
-# Chama a função para começar o jogo
+
 adivinhar_animal()
