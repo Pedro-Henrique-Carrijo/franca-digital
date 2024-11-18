@@ -1,0 +1,21 @@
+# Tabuada do número 5 usando faça... enquanto (simulado com while)
+def tabuada_cinco():
+    n = 1
+    while True:
+        print(f"5 x {n} = {5 * n}")
+        n += 1
+        if n > 10:
+            break
+
+# Tabuada de qualquer número digitado pelo usuário usando para
+def tabuada_personalizada(numero):
+    for i in range(1, 11):
+        print(f"{numero} x {i} = {numero * i}")
+
+# Testes
+print("\nTabuada do 5:")
+tabuada_cinco()
+
+print("\nTabuada personalizada:")
+numero = int(input("Digite um número: "))
+tabuada_personalizada(numero)
