@@ -1,21 +1,17 @@
-# Tabuada do número 5 usando faça... enquanto (simulado com while)
-def tabuada_cinco():
-    n = 1
-    while True:
-        print(f"5 x {n} = {5 * n}")
-        n += 1
-        if n > 10:
-            break
+def trocar_valores(a, b):
+    # Troca os valores de a e b usando a atribuição múltipla
+    a, b = b, a
+    return a, b
 
-# Tabuada de qualquer número digitado pelo usuário usando para
-def tabuada_personalizada(numero):
-    for i in range(1, 11):
-        print(f"{numero} x {i} = {numero * i}")
+# Testando a função
+x = int(input("Digite o valor de x: "))
+y = int(input("Digite o valor de y: "))
 
-# Testes
-print("\nTabuada do 5:")
-tabuada_cinco()
+# Mostra os valores antes da troca
+print(f"Antes da troca: x = {x}, y = {y}")
 
-print("\nTabuada personalizada:")
-numero = int(input("Digite um número: "))
-tabuada_personalizada(numero)
+# Troca os valores
+x, y = trocar_valores(x, y)
+
+# Mostra os valores após a troca
+print(f"Após a troca: x = {x}, y = {y}")
