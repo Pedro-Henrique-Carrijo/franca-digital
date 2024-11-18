@@ -1,0 +1,30 @@
+# Subprograma que verifica se um número é divisível por 6
+def divisivel_por_seis(numero):
+    return numero % 6 == 0
+
+# Subprograma que troca o valor de duas variáveis
+def trocar_valores(a, b):
+    return b, a
+
+# Subprogramas de uma calculadora (+, -, *, /)
+def calculadora(a, b, operacao):
+    if operacao == '+':
+        return a + b
+    elif operacao == '-':
+        return a - b
+    elif operacao == '*':
+        return a * b
+    elif operacao == '/':
+        if b != 0:
+            return a / b
+        else:
+            return "Erro: divisão por zero"
+    else:
+        return "Operação inválida"
+
+# Testes
+print("Divisível por 6:", divisivel_por_seis(18))  # True
+a, b = 5, 10
+a, b = trocar_valores(a, b)
+print(f"Valores trocados: a = {a}, b = {b}")  # a = 10, b = 5
+print("Resultado da calculadora:", calculadora(10, 2, '+'))  # 12
